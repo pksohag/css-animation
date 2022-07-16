@@ -1,0 +1,175 @@
+.field {
+    border: 1px solid lightseagreen;
+}
+
+.field:hover #bat {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+.field:hover .ball {
+    transform: translate(720px, -150px);
+}
+
+#bat {
+    height: 400px;
+    transition: transform 0.2s ease-in;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 25px;
+    position: relative;
+    left: 565px;
+    transition: transform 0.2s ease-out 0.2s;
+
+}
+
+/*animation ball continious*/
+.animation-section {
+    text-align: center;
+}
+
+.animation-ground {
+    display: flex;
+    margin: 20px;
+}
+
+@keyframes sliding {
+    0% {
+        background-color: green;
+        left: 0;
+        top: 0px;
+    }
+
+    50% {
+        top: 325px;
+        transform: scale(.5);
+        background-color: darkorange;
+    }
+
+    100% {
+        background-color: red;
+        left: 300px;
+        top: 0px;
+    }
+}
+
+@keyframes multislide {
+    0% {
+        background-color: green;
+        left: 0;
+        top: 0px;
+    }
+
+    25% {
+        background-color: rgb(192, 46, 46);
+        top: 325px;
+        transform: scale(0.5);
+    }
+
+    50% {
+        background-color: green;
+        left: 400;
+        top: 0px;
+        transform: scale(1);
+    }
+
+    75% {
+        background-color: rgb(192, 46, 46);
+        top: 325px;
+        transform: scale(0.5);
+    }
+
+    100% {
+        background-color: green;
+        left: 700px;
+        top: 0px;
+    }
+
+
+}
+
+@keyframes multislide2 {
+    0% {
+        background-color: deeppink;
+        left: 0;
+        top: 200px;
+    }
+
+    25% {
+        background-color: lightgreen;
+        top: -125px;
+        transform: scale(0.5);
+    }
+
+    50% {
+        background-color: deeppink;
+        left: 400;
+        top: 200px;
+        transform: scale(1);
+    }
+
+    75% {
+        background-color: lightgreen;
+        top: -125px;
+        transform: scale(0.5);
+    }
+
+    100% {
+        background-color: deeppink;
+        left: 700px;
+        top: 200px;
+    }
+
+
+}
+
+
+
+
+.animation-box {
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.animation-ball {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 50px;
+    animation: sliding 1s ease-in-out 0.2s infinite alternate;
+    animation-play-state: running;
+    position: relative
+}
+
+.multi-box {
+    width: 800px;
+    height: 400px;
+    background-color: chocolate;
+    margin: 0px 20px;
+}
+
+.multi-ball {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50px;
+    animation: multislide 2s ease-in-out 0s infinite alternate;
+    animation-play-state: running;
+    position: relative
+}
+
+.multi-ball2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50px;
+    animation: multislide2 2s ease-in-out 0s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+    top: 200px;
+}
