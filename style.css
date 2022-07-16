@@ -173,3 +173,29 @@
     position: relative;
     top: 200px;
 }
+
+.box-all {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.box-content {
+    width: 220px;
+    height: 220px;
+    background-color: antiquewhite;
+    margin: 60px;
+}
+
+.box-animation {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    transition: transform 0.5s;
+    padding: 20px;
+
+}
+
+.box-animation:hover {
+    transform: rotate(75deg);
+}
